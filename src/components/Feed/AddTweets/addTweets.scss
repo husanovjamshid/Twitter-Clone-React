@@ -1,0 +1,47 @@
+.addTweet__link {
+  width: 100%;
+  max-width: 100px;
+  padding: 7px 0;
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #1da1f2;
+  border-radius: 76px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.tweets__area {
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+.tweets__form-area {
+  width: 100%;
+  max-width: 400px;
+}
+
+.stikers {
+  cursor: pointer;
+  transition: all .4s ease;
+  border-radius: 50%;
+  padding: 5px;
+  
+}
+
+.stikers:hover {
+    background-color: #00abee2a;
+}
