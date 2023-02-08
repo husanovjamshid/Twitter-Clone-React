@@ -13,7 +13,8 @@ export const Header = () => {
           </ul>
         </nav>
       </header>
-      <hr />
+      <span className="line"></span>
+
     </>
   );
 };

@@ -1,0 +1,64 @@
+.tweet__title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.tweet__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+.tweets__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.follow__icons img {
+  cursor: pointer;
+}
+
+.commets {
+  color: #536471;
+}
+
+hr {
+  background: #e6e6e6 !important;
+}
+
+.line {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.comments:hover {
+  background-color: #00abee2a;
+}
+
+.follow__user-info {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}

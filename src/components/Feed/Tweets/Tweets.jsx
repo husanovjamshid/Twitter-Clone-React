@@ -1,4 +1,5 @@
 import { AddTweets } from "../AddTweets/AddTweets";
+import { FollowTweets } from "../FollowTweets/FollowTweets";
 import { Header } from "../Header/Header";
 
 export const Tweets = () => {
@@ -6,6 +7,7 @@ export const Tweets = () => {
     <>
       <Header />
       <AddTweets />
+      <FollowTweets />
     </>
   );
 };

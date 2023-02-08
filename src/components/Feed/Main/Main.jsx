@@ -1,19 +1,20 @@
 import { Buttons } from "../Buttons/Buttons";
 import { Trends } from "../Trends/Trends";
 import { Tweets } from "../Tweets/Tweets";
-import './main.scss'
+import "./main.scss";
+import '../../Fonts/Fonts.scss'
 export const Main = () => {
   return (
     <>
-      <div className="row ">
-        <div className="col-md-3 buttons__line pt-3">
+      <div className="d-flex justify-content-between">
+        <div className="buttons__page border-end position-sticky sticky-top p-0 pt-2">
           <Buttons />
         </div>
-        <div className="col-md-6 p-0 pt-3">
+        <div className="tweets__page p-0 pt-2">
           {" "}
           <Tweets />
         </div>
-        <div className="col-md-3 pt-3">
+        <div className="trends__page p-0 pt-2 border-start ">
           <Trends />
         </div>
       </div>

@@ -1,3 +1,9 @@
+.buttons__wrapper {
+  // height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
 .buttons__link {
   margin-bottom: 5px;
   font-weight: 500;
@@ -45,6 +51,21 @@
 }
 
 .user__name {
-  max-width: 147px;
-  overflow: hidden;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: #000000;
+  width: 100%;
+  max-width: 135px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.user__subname {
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
+  opacity: 0.6;
 }
