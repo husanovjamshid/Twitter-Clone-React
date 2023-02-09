@@ -28,6 +28,12 @@
   border-radius: 10px;
 }
 
+.famous__list {
+  position: sticky;
+  z-index: 999;
+  top: 50px;
+}
+
 .trends__title {
   font-weight: 700;
   font-size: 20px;
@@ -52,7 +58,7 @@
 }
 
 .trens__item + .trens__item {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .user__name {

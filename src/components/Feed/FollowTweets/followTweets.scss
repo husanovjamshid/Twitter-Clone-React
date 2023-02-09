@@ -55,10 +55,25 @@ hr {
 }
 
 .follow__user-info {
+  margin: 0;
   width: 100%;
   max-width: 320px;
-  display: block;
   white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis;
+}
+
+.follow__avatar {
+  width: 100%;
+  max-width: 60px;
+}
+
+.follow__comments {
+  width: 100%;
+  max-width: 747px;
+}
+
+.follow__burger {
+  width: 100%;
+  max-width: 17px;
 }

@@ -94,7 +94,7 @@ export const Buttons = () => {
         <div className="d-flex align-items-center gap-4 mt-5 ">
           <div className="d-flex align-items-center ">
             <img width="35px" src={avatar} alt="" />
-            <div className="ms-2">
+            <div className="ms-3">
               <p className=" m-0 user__name">Akbarjon Ahmadjonov</p>
               <p className=" m-0 user__subname">@bobur_mavlonov</p>
             </div>

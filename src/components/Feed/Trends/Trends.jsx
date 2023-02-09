@@ -37,7 +37,7 @@ export const Trends = () => {
           </ul>
         </div>
 
-        <div className="trends__list">
+        <div className="trends__list famous__list">
           <div className="d-flex align-items-center justify-content-between">
             <h2 className="trends__title m-0">You might like</h2>
           </div>

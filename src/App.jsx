@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Main } from "./components/Feed/Main/Main";
 function App() {
   return (
-    <div className="container">
+    <div className="container position-relative">
       <Main />
       {/* <Login /> */}
       {/* <Register /> */}
