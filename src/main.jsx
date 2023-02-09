@@ -4,12 +4,15 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import "./main.scss";
 import { UserProvider } from "./context/UserContext";
+// import { TweetsProvider } from "./context/TweetsContext";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        {" "}
-        <App />
+        {/* <TweetsProvider> */}
+          {" "}
+          <App />
+        {/* </TweetsProvider> */}
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>

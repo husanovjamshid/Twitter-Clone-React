@@ -1,7 +1,11 @@
 .buttons__wrapper {
-  // height: 100vh;
-  position: sticky;
-  top: 0;
+  width: 100%;
+  max-width: 268px;
+  min-height: 100vh;
+}
+
+.brand__logo {
+  padding: 10px 0;
 }
 
 .buttons__link {
@@ -37,15 +41,17 @@
   padding: 10px 0;
   display: block;
   background: #1da1f2;
-  border-radius: 76px;
+  border-radius: 86px;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   text-decoration: none;
   text-align: center;
-  cursor: pointer;
   color: #ffffff;
+  cursor: pointer;
+
   &:hover {
+    cursor: pointer;
     color: #ffffff;
   }
 }
@@ -68,4 +74,13 @@
   font-size: 15px;
   color: #000000;
   opacity: 0.6;
+}
+
+.buttons__avatar {
+  cursor: pointer;
+  border-radius: 86px;
+
+  &:hover {
+    border-radius: 86px;
+  }
 }

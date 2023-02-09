@@ -5,14 +5,22 @@ import gif from "../../../assets/img/gif.svg";
 import stat from "../../../assets/img/stats.svg";
 import emoji from "../../../assets/img/smile.svg";
 import date from "../../../assets/img/date.svg";
+import { useContext } from "react";
+import { UserContext } from "../../../context/UserContext";
 
 export const AddTweets = () => {
+  const { user } = useContext(UserContext);
   return (
     <>
       <div className="add__wrapper px-3">
         <div className="row">
           <div className="col-md-1">
-            <img width="40px" src={avatar} alt="" />
+            <img
+              className="rounded-pill"
+              width="40px"
+              src={user.profile_image_url_https}
+              alt=""
+            />
           </div>
           <div className="col-md-7">
             <form className="tweets__form-area">

@@ -57,7 +57,7 @@ hr {
 .follow__user-info {
   margin: 0;
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis;
@@ -76,4 +76,12 @@ hr {
 .follow__burger {
   width: 100%;
   max-width: 17px;
+}
+
+.follow__img-res {
+  width: 100%;
+  max-width: 504px;
+  max-height: 335px;
+  background-size: cover;
+  
 }

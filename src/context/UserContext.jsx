@@ -1,34 +1,27 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
-
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-  const [user, setUser] = useState([
-    {
-      users: [],
-    },
-  ]);
+  const [user, setUser] = useState([]);
 
-  //   const { tweets, users } = user;
-  let names = "khayotillo7";
+
   useEffect(() => {
     const options = {
       method: "GET",
-      url: "https://twitter135.p.rapidapi.com/Search/",
-      params: { q: `${names}`, count: "20" },
+      url: "https://twitter135.p.rapidapi.com/UserByScreenName/",
+      params: { username: "Abdukarim2002" },
       headers: {
-        "X-RapidAPI-Key": "c5b09d4a95mshd8c0c09b37f311dp18bacejsna626f782db78",
+        "X-RapidAPI-Key": "b00df49919mshe4d672a909f1614p12fcf6jsnbe0efce33fb9",
         "X-RapidAPI-Host": "twitter135.p.rapidapi.com",
       },
     };
 
     axios
       .request(options)
-      .then((data) => {
-        if (data) {
-          setUser({ users: data.data.globalObjects.users });
-        //   console.log(data.data.globalObjects);
+      .then(function (response) {
+        if (response) {
+          setUser(response.data.data.user.result.legacy);
         }
       })
       .catch(function (error) {
@@ -36,14 +29,9 @@ export const UserProvider = ({ children }) => {
       });
   }, []);
 
-  //   console.log(user);
-
-  for (let key in user) {
-    console.log(`${key}: ${user[key]}`);
-  }
 
   return (
-    <UserContext.Provider value={(user, setUser)}>
+    <UserContext.Provider value={{ user, setUser}}>
       {children}
     </UserContext.Provider>
   );

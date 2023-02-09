@@ -7,7 +7,7 @@ import { SearchTrens } from "../TrendSearch/TrendSearch";
 export const Trends = () => {
   return (
     <>
-      <div className="trends__wrapper px-2">
+      <div className="trends__wrapper border-start px-2">
         <SearchTrens />
 
         <div className="trends__list">

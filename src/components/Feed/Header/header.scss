@@ -5,8 +5,11 @@
   color: #000000;
 }
 
-// .tweets__header {
-  
-// }
+.header__stick {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
 
 

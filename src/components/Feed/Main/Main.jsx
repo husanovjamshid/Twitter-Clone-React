@@ -13,8 +13,8 @@ export const Main = () => {
   //   });
   return (
     <>
-      <div className="d-flex justify-content-between">
-        <div className="buttons__page border-end  p-0 pt-2">
+      <div className="home__page">
+        <div className="buttons__page p-0 ">
           <div className="buttons__page-wrap ">
             {" "}
             <Buttons />
@@ -24,7 +24,7 @@ export const Main = () => {
           {" "}
           <Tweets />
         </div>
-        <div className="trends__page p-0  border-start ">
+        <div className="trends__page p-0   ">
           <Trends />
         </div>
       </div>
